@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Display display = getWindowManager().getDefaultDisplay();
         mSize = new Point();
         display.getSize(mSize);
+        requestForCameraPermission(getCurrentFocus());
     }
 
     @Override
